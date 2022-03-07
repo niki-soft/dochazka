@@ -1,22 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<FlyoutPage
+<Shell
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:Dochazka2"
     x:Class="Dochazka2.MainPage"
     Title="Menu">
 
-    <FlyoutPage.Flyout>
-        <pages:FlyoutMenuPage x:Name="flyout"/>
-    </FlyoutPage.Flyout>
+    <Shell.FlyoutHeader>
 
-    <FlyoutPage.Detail>
-        <NavigationPage>
-            <x:Arguments>
-                <pages:HomePage/>
-            </x:Arguments>
-        </NavigationPage>
-    </FlyoutPage.Detail>
-  
-</FlyoutPage>
+        <pages:HeaderContentView/>
+    </Shell.FlyoutHeader>
+
+
+    <FlyoutItem Title="Docházkový systém Aplex"
+                Shell.TabBarIsVisible="False"
+                FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Home" Icon="" IsTabStop="True" ContentTemplate="{DataTemplate pages:HomePage}"/>
+        <ShellContent Title="Photo" Icon="" IsTabStop="True" ContentTemplate="{DataTemplate pages:PhotoPage}"/>
+    </FlyoutItem>
+
+</Shell>
 

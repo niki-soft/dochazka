@@ -8,25 +8,12 @@ using Xamarin.Forms;
 
 namespace Dochazka2
 {
-    public partial class MainPage : FlyoutPage
+    public partial class MainPage : Shell
     {
         public MainPage()
         {
             InitializeComponent();
-            flyout.listview.ItemSelected += OnSelectedItem;
-
         }
-
-        private void OnSelectedItem(object sender, SelectedItemChangedEventArgs e)
-        {
-            var item = e.SelectedItem as FlyoutItemPage;
-            if (item != null)
-            {
-                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetPage));
-                flyout.listview.SelectedItem = null;
-                IsPresented = false;
-            }
-
-        }
+ 
     }
 }

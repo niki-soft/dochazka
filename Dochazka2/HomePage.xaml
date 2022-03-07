@@ -6,6 +6,9 @@
     x:Class="Dochazka2.HomePage">
 
     <StackLayout>
-        <Label Text="Home Page" HorizontalOptions="Center"/>
+        <Label Text="Docházkový systém Aplex"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontFamily="Bold"/>
     </StackLayout>
 </ContentPage>
