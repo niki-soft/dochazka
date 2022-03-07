@@ -9,6 +9,6 @@
         <Label Text="Docházkový systém Aplex"
                HorizontalOptions="Center"
                FontSize="Large"
-               FontFamily="Bold"/>
+               FontAttributes="Bold"/>
     </StackLayout>
 </ContentPage>

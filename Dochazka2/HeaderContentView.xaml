@@ -4,11 +4,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Dochazka2.HeaderContentView"
     xmlns:pages="clr-namespace:Dochazka2"
-    HeightRequest="170">
+    HeightRequest="100">
 
-    <StackLayout BackgroundColor="Beige">
-
+    <StackLayout BackgroundColor="White">
+        <Image Source="aplex"
+               WidthRequest="100"
+               HorizontalOptions="Start"/>
     </StackLayout>
-    
-    
 </ContentView>

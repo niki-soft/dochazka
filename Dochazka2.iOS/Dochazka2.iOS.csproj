@@ -92,6 +92,8 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png" />
+    <ImageAsset Include="Assets.xcassets\aplex.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\aplex.imageset\1024.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -114,5 +116,8 @@
       <Project>{5FB8817F-0D72-4186-A8AF-E1ACF9A5F8BA}</Project>
       <Name>Dochazka2</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\aplex.imageset\" />
   </ItemGroup>
 </Project>

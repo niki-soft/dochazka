@@ -6,16 +6,27 @@
     xmlns:pages="clr-namespace:Dochazka2"
     Title="Photo">
 
-    <StackLayout>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+    <StackLayout Orientation="Vertical">
+        
 
-            <Image x:Name="PhotoImage" />
-            <Button x:Name="CameraButton" Text="Take Photo" Grid.Row="1" Clicked="CameraButton_Clicked"/>
-        </Grid>
+        <Image x:Name="PhotoImage" />
+        <Button x:Name="CameraButton1"
+                Text="Vyfotit"
+                Grid.Row="1"
+                Clicked="CameraButton1_Clicked"
+                BackgroundColor="LightSkyBlue"
+                Margin="20"
+                VerticalOptions="End"/>
+
+        <Button x:Name="CameraButton2"
+                IsVisible="{Binding isPhoto}"
+                Text="Odeslat"
+                Grid.Row="1"
+                Clicked="CameraButton2_Clicked"
+                BackgroundColor="LightSkyBlue"
+                Margin="20"
+                VerticalOptions="End"/>
+        
     </StackLayout>
    
 </ContentPage>
