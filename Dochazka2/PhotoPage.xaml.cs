@@ -27,5 +27,9 @@ namespace Dochazka2
             if (photo != null)
                 PhotoImage.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
         }
+
+        void CameraButton2_Clicked(System.Object sender, System.EventArgs e)
+        {
+        }
     }
 }

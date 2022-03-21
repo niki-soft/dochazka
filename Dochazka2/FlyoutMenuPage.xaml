@@ -7,7 +7,8 @@
     Title="Menu">
     
     <StackLayout>
-        <ListView x:Name="listview" x:FieldModifier="public">
+        <ListView x:Name="listview" x:FieldModifier="public"
+                  BackgroundColor="{AppThemeBinding Light={StaticResource pagecolorlight}, Dark={StaticResource pagecolordark}}">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type pages:FlyoutItemPage}">
                     <pages:FlyoutItemPage Title="Home" IconSource = "" TargetPage="{x:Type pages:HomePage}"/>

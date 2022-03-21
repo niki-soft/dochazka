@@ -6,7 +6,7 @@
     xmlns:pages="clr-namespace:Dochazka2"
     HeightRequest="100">
 
-    <StackLayout BackgroundColor="White">
+    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource pagecolorlight}, Dark={StaticResource pagecolordark}}">
         <Image Source="aplex"
                WidthRequest="100"
                HorizontalOptions="Start"/>
